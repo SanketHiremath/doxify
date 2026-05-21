@@ -1,0 +1,8 @@
+{
+  "name": "doxify",
+  "description": "Adds Doxygen-style function comments to C/C++ header and source files. Runs a builder agent plus spec and quality reviewer agents per file pair, then commits.",
+  "author": {
+    "name": "Sanket Hiremath",
+    "url": "https://github.com/sankethiremath"
+  }
+}

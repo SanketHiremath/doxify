@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "doxify",
+  "description": "Adds Doxygen-style function comments to C/C++ codebases via a multi-agent build-review pipeline.",
+  "owner": {
+    "name": "Sanket Hiremath",
+    "url": "https://github.com/sankethiremath"
+  },
+  "plugins": [
+    {
+      "name": "doxify",
+      "description": "Add Doxygen comments to C/C++ header and source files.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
