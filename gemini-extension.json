@@ -1,0 +1,6 @@
+{
+  "name": "doxify",
+  "description": "Adds Doxygen-style function comments to C/C++ codebases via a multi-agent build-review pipeline.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

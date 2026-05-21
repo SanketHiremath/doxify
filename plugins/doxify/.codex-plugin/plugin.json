@@ -1,0 +1,37 @@
+{
+  "name": "doxify",
+  "version": "1.0.0",
+  "description": "Adds Doxygen-style function comments to C/C++ codebases via a multi-agent build-review pipeline.",
+  "author": {
+    "name": "Sanket Hiremath",
+    "url": "https://github.com/sankethiremath"
+  },
+  "homepage": "https://github.com/sankethiremath/doxify",
+  "repository": "https://github.com/sankethiremath/doxify",
+  "license": "MIT",
+  "keywords": [
+    "doxygen",
+    "documentation",
+    "c",
+    "cpp",
+    "comments"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Doxify",
+    "shortDescription": "Add Doxygen comments to C/C++ files.",
+    "longDescription": "Add Doxygen-style function comments to C/C++ header and source files. Runs a builder agent plus spec and quality reviewer agents per file pair, then commits.",
+    "developerName": "Sanket Hiremath",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "websiteURL": "https://github.com/sankethiremath/doxify",
+    "privacyPolicyURL": "https://github.com/sankethiremath/doxify/blob/main/README.md",
+    "termsOfServiceURL": "https://github.com/sankethiremath/doxify/blob/main/LICENSE",
+    "defaultPrompt": [
+      "Use /doxify to add Doxygen comments to C/C++ header and source files."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
