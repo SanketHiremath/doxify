@@ -1,10 +1,12 @@
 # doxify
 
-Add Doxygen-style function comments to C/C++ codebases.
+Add Doxygen-style function comments to C/C++ codebases — and generate the full HTML documentation site.
 
 Runs a **builder agent + spec reviewer + quality reviewer** per file pair, then commits. Works on any C/C++ project — no hardcoded paths or project-specific assumptions.
 
 ## What it does
+
+### `/doxify` — Add Doxygen comments
 
 ```
 /doxify                        # document every undocumented file pair
@@ -16,6 +18,19 @@ Runs a **builder agent + spec reviewer + quality reviewer** per file pair, then 
 - Replaces stale auto-generated comment blocks; leaves all other comments untouched
 - Never touches auto-generated or third-party files
 - Commits each file pair with `docs: add Doxygen to foo.h and foo.c`
+
+### `/doxify-generate` — Generate HTML docs
+
+```
+/doxify-generate               # run from current directory
+/doxify-generate path/to/proj  # specify project root
+/doxify-generate path/Doxyfile # use an existing Doxyfile
+```
+
+- Installs `doxygen` automatically if not present (macOS via Homebrew, Linux via `apt`/`dnf`/`pacman`)
+- Generates or reuses a `Doxyfile` with sensible defaults
+- Outputs HTML docs to `docs/html/index.html`
+- Reports the output path and offers to open it in the browser
 
 ## Install
 
