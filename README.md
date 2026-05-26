@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/doxify-logo.png" alt="doxify logo" width="180" />
+</p>
+
 # doxify
 
 Add Doxygen-style function comments to C/C++ codebases — and generate the full HTML documentation site.
@@ -36,7 +40,20 @@ Runs a **builder agent + spec reviewer + quality reviewer** per file pair, then 
 
 ### Claude Code
 
-Add the plugin source to `~/.claude/settings.json`:
+**Option A — VS Code extension (Manage Plugins UI)**
+
+1. Open VS Code with the Claude Code extension installed
+2. Click the Claude Code icon in the Activity Bar
+3. Click **Manage Plugins** (puzzle piece icon)
+4. Click **Add marketplace** and enter:
+   ```
+   https://github.com/SanketHiremath/doxify.git
+   ```
+5. Find **doxify** in the list and click **Install**
+
+**Option B — settings.json**
+
+Add the marketplace source to `~/.claude/settings.json`:
 
 ```json
 {
@@ -44,7 +61,7 @@ Add the plugin source to `~/.claude/settings.json`:
     "doxify": {
       "source": {
         "source": "git",
-        "url": "https://github.com/sankethiremath/doxify.git"
+        "url": "https://github.com/SanketHiremath/doxify.git"
       }
     }
   }
